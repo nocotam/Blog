@@ -38,29 +38,3 @@ function oblicz()
     die;
 
 }
-?>
-
-<!doctype html>
-<head>
-    <title> Mariuszowa strona</title>
-    <style>
-     body {
-         background-color: Green;
-     }
-
-    </style>
-
-</head>
-<body>
-
-<h1> Kalkulatorex </h1>
-<form method="Post">
-<input type="text" name="liczba1"/> <br>
-<input type="text" name="liczba2"/> <br>
-<input type="submit" value="oblicz" onclick="oblicz()"/>
-
-</form>
-
-
-</body>
-</html>

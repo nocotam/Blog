@@ -5,6 +5,7 @@ namespace App\Controller;
 
 
 use App\MyServices;
+use App\SMSSender;
 use App\Stronka;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -31,6 +32,9 @@ class DefaultController extends AbstractController
     {
         $services = new MyServices();
         $data = $services->getData();
+
+        $smsSender = new SMSSender();
+        $smsSender->sendSMSTO(1123112312);
 
         return $this->render('services.html.twig', [
             'servicesXYZ' => $data

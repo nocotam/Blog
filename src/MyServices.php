@@ -16,3 +16,5 @@ class MyServices
         return $services;
     }
 }
+
+?>
