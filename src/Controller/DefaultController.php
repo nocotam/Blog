@@ -29,7 +29,7 @@ class DefaultController extends AbstractController
       */
     public function mojeUslugiasdlasdhkgasdgajsd()
     {
-        $services = new ();
+        $services = new MyServices();
         $data = $services->getData();
 
         return $this->render('services.html.twig', [
