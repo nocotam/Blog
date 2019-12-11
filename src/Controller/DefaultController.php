@@ -4,17 +4,36 @@
 namespace App\Controller;
 
 
+use App\MyServices;
 use App\Stronka;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
-class DefaultController
+class DefaultController extends AbstractController
 {
- public function index()
- {
-     $numberObject = new Stronka();
-    echo 1;
-     echo $numberObject->number(2);
-     die;
-     return new Response('ok');
- }
+     /**
+      * @Route("")
+      */
+    public function index()
+     {
+         $numberObject = new Stronka();
+        echo 1;
+         echo $numberObject->number(2);
+         die;
+         return new Response('ok');
+     }
+
+     /**
+      * @Route("/uslugi")
+      */
+    public function mojeUslugiasdlasdhkgasdgajsd()
+    {
+        $services = new ();
+        $data = $services->getData();
+
+        return $this->render('services.html.twig', [
+            'servicesXYZ' => $data
+        ]);
+    }
 }
