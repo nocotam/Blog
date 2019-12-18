@@ -1,61 +1,18 @@
 <!DOCTYPE html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <link href="/var/www/Blog/projekcik/grafika.css" rel="stylesheet" />
 <style>
-    #siema{
-        position: fixed;
-        height: 100%;
-        width:35%;
-        background-color:rgb(65, 66, 64);
-        
-
-    }
-    body{
-        margin: 0px;
-        padding: 0px;
-        
-    }
-    li{
-        font-size: 25px;
-        color:white;
-        
-    }
-    h2{
-        font-size: 40px;
-        color:black;
-        padding:25px;
-        float: right;
-        margin-right: 60px;
-        font-family: Courier New ;
-    }
-    ul{
-        float: right;
-        margin-right: 100px;
-    }
-    a{
-        text-decoration: none;
-        font-family: Courier New ;
-    }
-    h1{
-        float: right;
-        margin-right: 250px;
-    }
+   
     h3{
     font-size: 45px;
     margin-top: 100px;
-    float: right;
-    margin-right: 450px;
-
-
-
-
-
+    text-align: center;
     }
     h4{
 
-    float: inline-start;
-    font-size: 20px;
-
-
+    text-align: center;
+    font-size: 30px;
     }
     #content{
         float:right;
@@ -64,8 +21,118 @@
         box-sizing: border-box;
         font-family: Courier New ;
     }
+    @media (max-width: 600px) and (min-width: 200px) {
+     
+     #siema{
+         position: fixed;
+         height: 100%;
+         width:35%;
+         background-color:rgb(65, 66, 64);
+         float: left;
+         overflow: scroll;
+         background-image: url("siemabackground.jpg");
+         background-attachment: fixed;
+         background-size: contain;
+ 
+ 
+     }
+     body{
+         margin: 0px;
+         padding: 0px;
+         
+     }
+     li{
+         font-size: 15px;
+         color:white;
+         margin-right: -70px;
+         text-shadow: 4px 2px #000000;
+         
+     }
+     ul{
+         float: right;
+         margin-right: 100px;
+       }
+     #content{
+         float:right;
+         width: calc(100% - 35%);
+         padding: 10px;
+         box-sizing: border-box;
+         font-family: 'Cardo', serif;
+         background-image: url("granit1.png");
+         
+       }
+     .logo{
+         width: 80%;
+         height: 10%;
+         float: right;
+ 
+     }
+     h3{
+            text-align: center;
+            font-size: 150%;
+     }
+     h4{
+        text-align: center;
+        font-size: 120%;
 
-    
+     }
+  }
+  @media (min-width: 600px) and (max-width: 1000px) {
+                body {
+            background-color: #e6e6fe;
+
+                  } 
+                #siema{
+                position: fixed;
+                height: 100%;
+                width:35%;
+                background-color:rgb(65, 66, 64);
+                background-image: url("siemabackground.jpg");
+                background-attachment: fixed;
+                background-size: contain;
+                }
+            body{
+                margin: 0px;
+                padding: 0px;
+                
+                }
+            li{
+                font-size: 25px;
+                color:white;
+                margin-right: -50px;
+                text-shadow: 4px 2px #000000;
+
+                }
+            ul{
+                float: right;
+                margin-right: 100px;
+                } 
+            h1{
+                text-align: center;
+                font-size: 30px;
+                }
+            
+            #content{
+                float:right;
+                width: calc(100% - 35%);
+                padding: 10px;
+                box-sizing: border-box;
+                background-image: url("granit1.png");
+                font-family: 'Cardo', serif;
+                text-align: center;
+                }
+            h1{
+                font-size: 300%;
+                font-family: 'Cardo', serif;
+                }
+          
+            .logo{
+                width: 80%;
+                height: 20%;
+                float: right;
+
+             }
+}
     
     
 </style>
@@ -74,25 +141,20 @@
 <div id="content">
     <h3>CO OFERUJEMY?</h3><br>
     
-    <h4><hr>Kamieniarstwo Paweł Kalinowski oferuje wysokiej jakości pomniki i nagrobki.Reszta textu.... .............................. .................... .................. .................... ...................... .................. ................ ................. ................. ............... ............. ................ ................. .......................... ............................ ........................................... ........................................ ..................................... ........................................ .................................. .............. ............ <hr></h4>
+    <h4><hr>Kamieniarstwo Paweł Kalinowski oferuje wysokiej jakości pomniki i nagrobki.Reszta textu.... .............................. .................... .................. .................... ...................... .................. jakiś text przykładowy trzeba wymyślić a teraz pisze zeby wypełnić linijki lol duzo troche tego musze zrobic no ale cóż nic nie poradze serio przydał by juz się tu tekst oryginalny :000000000000000 jeszcze nie starczyło tekstu wiec dalej pisze co moge i myk zobaczmy czy juz nie jeszcze nie mały pasek został tylko do wypełninia taki 1 px dosłownie wiec to ostatnia linijka ................ ................. ................. ............... ............. ................ ................. .......................... ............................ ........................................... ........................................ ..................................... ........................................ .................................. .............. ............ <hr></h4>
 
 </div>
 
-
-
-
-
-
-
-    <div id="siema">
-        <h2>Menu Główne</h2>
-    <ul>
-        <hr>
-        <a href="O nas.html"><li>O nas</li></a><br><hr>
-        <a href="Nasza Oferta.html"><li>Nasza Oferta</li></a><br><hr>
-        <a href="Rzeźby.html"><li>Rzeźby</li></a><br><hr>
-        <a href="Kontakt.html"><li>Kontakt</li></a><br><hr>
-        <a href="Nasi Partnerzy.html"><li>Nasi Partnerzy</li></a><hr>
-    </ul></div>
+<div id="siema">
+    <img class="logo" src="logo.png" alt="">
+<ul>
+    <hr>
+    <a href="O nas.html"><li>O nas</li></a><br><hr>
+    <a href="Nasza Oferta.html"><li>Nasza Oferta</li></a><br><hr>
+    <a href="Pomniki.html"><li>Pomniki</li></a><br><hr>
+    <a href="Inne Usługi.html"><li>Inne Usługi</li></a><br><hr>
+    <a href="Kontakt.html"><li>Kontakt</li></a><br><hr>
+</ul>
+</div>
 
 </body>

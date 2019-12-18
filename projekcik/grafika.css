@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(0, 0, 0);
+
+
+   } #siema{
+        position: fixed;
+        height: 100%;
+        width:35%;
+        background-color:rgb(65, 66, 64);
+        background-image: url("siemabackground.jpg");
+        background-attachment: fixed;
+        background-size: contain;
+
+
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    li{
+        font-size: 230%;
+        color:white;
+        text-shadow: 4px 2px #000000;
+        
+    }
+    .logo{
+        width: 80%;
+        height: 30%;
+        float: right;
+
+    }
+    ul{
+        float: right;
+        margin-right: 100px;
+    }
+    a{
+        text-decoration: none;
+        font-family: 'Cardo', serif;
+    }
+    h1{
+        text-align: center;
+    }
+    
+    #content{
+        float:right;
+        width: calc(100% - 35%);
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: 'Cardo', serif;
+        text-align: center;
+        background-image: url("granit1.png");
+    }

@@ -1,66 +1,10 @@
 <!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/var/www/Blog/projekcik/grafika.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+
 <style>
- body {
-        background-color: rgb(0, 0, 0);
-
-
-   } #siema{
-        position: fixed;
-        height: 100%;
-        width:35%;
-        background-color:rgb(65, 66, 64);
-        background-image: url("siemabackground.jpg");
-        background-attachment: fixed;
-        background-size: contain;
-   }
-    body{
-        margin: 0px;
-        padding: 0px;
-        
-    }
-    li{
-        font-size: 230%;
-        color:white;
-        text-shadow: 4px 2px #000000;
-        
-    }
-    h2{
-        font-size: 40px;
-        color:black;
-        padding:25px;
-        float: right;
-        margin-right: 60px;
-        font-family: 'Cardo', serif;
-    
-    }
-    ul{
-        float: right;
-        margin-right: 100px;
-    }
-    a{
-        text-decoration: none;
-        font-family: 'Cardo', serif;
-    }
-    h1{
-        text-align: center;
-        
-    }
-    
-    #content{
-        float:right;
-        width: calc(100% - 35%);
-        padding: 10px;
-        box-sizing: border-box;
-        font-family: 'Cardo', serif;
-        text-align: center;
-        background-image: url("granit1.png");
-       
-    
-
-
-    }
     h3{
         font-size: 150%;
         font-family: 'Cardo', serif;
@@ -167,7 +111,6 @@
 
 
     }
-    
     h5{
         text-align: center;
         font-size: 150%;
@@ -181,6 +124,12 @@
         height: 200px;
         margin-top: 50px;
     }
+    .logo{
+                width: 80%;
+                height: 10%;
+                float: right;
+
+             }
  }
 @media (min-width: 600px) and (max-width: 1000px) {
                 body {
@@ -269,7 +218,12 @@
 
 
                 }
+            .logo{
+                width: 80%;
+                height: 20%;
+                float: right;
 
+             }
 }
 
 
@@ -289,14 +243,14 @@
     </div>
 
     <div id="siema">
-        <h2>Menu Główne</h2>
+        <img class="logo" src="logo.png" alt="">
         <ul>
             <hr>
             <a href="O nas.html"><li>O nas</li></a><br><hr>
             <a href="Nasza Oferta.html"><li>Nasza Oferta</li></a><br><hr>
-            <a href="Rzeźby.html"><li>Rzeźby</li></a><br><hr>
+            <a href="Pomniki.html"><li>Pomniki</li></a><br><hr>
+            <a href="Inne Usługi.html"><li>Inne Usługi</li></a><br><hr>
             <a href="Kontakt.html"><li>Kontakt</li></a><br><hr>
-            <a href="Nasi Partnerzy.html"><li>Nasi Partnerzy</li></a><hr>
         </ul>
     </div>
 
