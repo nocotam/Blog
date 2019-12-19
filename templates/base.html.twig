@@ -2,11 +2,30 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+        <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+        <link href="/skeleton/main.css" rel="stylesheet" />
+        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+    <div id="content">
+        {% block body %}
+        {% endblock %}
+    </div>
+
+    {% block menu %}
+        <div id="siema">
+            <img class="logo" src="/images/logo.png" alt="">
+            <ul>
+                <hr>
+                <a href="O nas.html"><li>O nas</li></a><br><hr>
+                <a href="Nasza Oferta.html"><li>Nasza Oferta</li></a><br><hr>
+                <a href="Pomniki.html"><li>Pomniki</li></a><br><hr>
+                <a href="Inne Usługi.html"><li>Inne Usługi</li></a><br><hr>
+                <a href="Kontakt.html"><li>Kontakt</li></a><br><hr>
+            </ul>
+        </div>
+    {% endblock %}
     </body>
 </html>

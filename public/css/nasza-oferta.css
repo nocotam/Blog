@@ -1,0 +1,130 @@
+
+h3{
+    font-size: 45px;
+    margin-top: 100px;
+    text-align: center;
+}
+h4{
+
+    text-align: center;
+    font-size: 30px;
+}
+#content{
+    float:right;
+    width: calc(100% - 35%);
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Courier New ;
+}
+@media (max-width: 600px) and (min-width: 200px) {
+
+    #siema{
+        position: fixed;
+        height: 100%;
+        width:35%;
+        background-color:rgb(65, 66, 64);
+        float: left;
+        overflow: scroll;
+        background-image: url("/images/siemabackground.jpg");
+        background-attachment: fixed;
+        background-size: contain;
+
+
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+
+    }
+    li{
+        font-size: 15px;
+        color:white;
+        margin-right: -70px;
+        text-shadow: 4px 2px #000000;
+
+    }
+    ul{
+        float: right;
+        margin-right: 100px;
+    }
+    #content{
+        float:right;
+        width: calc(100% - 35%);
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: 'Cardo', serif;
+        background-image: url("/images/granit1.png");
+
+    }
+    .logo{
+        width: 80%;
+        height: 10%;
+        float: right;
+
+    }
+    h3{
+        text-align: center;
+        font-size: 150%;
+    }
+    h4{
+        text-align: center;
+        font-size: 120%;
+
+    }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+    body {
+        background-color: #e6e6fe;
+
+    }
+    #siema{
+        position: fixed;
+        height: 100%;
+        width:35%;
+        background-color:rgb(65, 66, 64);
+        background-image: url("/images/siemabackground.jpg");
+        background-attachment: fixed;
+        background-size: contain;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+
+    }
+    li{
+        font-size: 25px;
+        color:white;
+        margin-right: -50px;
+        text-shadow: 4px 2px #000000;
+
+    }
+    ul{
+        float: right;
+        margin-right: 100px;
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #content{
+        float:right;
+        width: calc(100% - 35%);
+        padding: 10px;
+        box-sizing: border-box;
+        background-image: url("/images/granit1.png");
+        font-family: 'Cardo', serif;
+        text-align: center;
+    }
+    h1{
+        font-size: 300%;
+        font-family: 'Cardo', serif;
+    }
+
+    .logo{
+        width: 80%;
+        height: 20%;
+        float: right;
+
+    }
+}

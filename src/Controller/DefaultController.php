@@ -13,22 +13,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends AbstractController
 {
-     /**
-      * @Route("")
-      */
-    public function index()
-     {
-         $numberObject = new Stronka();
-        echo 1;
-         echo $numberObject->number(2);
-         die;
-         return new Response('ok');
-     }
 
      /**
       * @Route("/uslugi")
       */
-    public function mojeUslugiasdlasdhkgasdgajsd()
+    public function uslugi()
     {
         $services = new MyServices();
         $data = $services->getData();
@@ -40,4 +29,30 @@ class DefaultController extends AbstractController
             'servicesXYZ' => $data
         ]);
     }
+        /**
+         * @Route("/o-nas")
+         */
+        public function ONas()
+{
+    return $this->render("O nas.html.twig");
+}
+
+    /**
+     * @Route("/nasza-oferta")
+     */
+    public function naszaoferta()
+    {
+        return $this->render("nasza-oferta.html.twig");
+    }
+    /**
+     * @Route("/pomniki")
+     */
+    public function pomniki()
+    {
+        return $this->render("pomniki.html.twig");
+    }
+
+
+
+
 }
